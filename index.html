@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo.svg" alt="" />
+      <div class="score">
+        <h1>SCORE</h1>
+        <div id="score">0</div>
+      </div>
+    </nav>
+
+    <section class="playground roll-in-blurred-left">
+      <div class="card">
+        <button class="paper card-btn" id="paper">
+          <div class="cont">
+            <img
+              src="./images/icon-paper.svg"
+              alt=""
+              srcset=""
+              class="card-img"
+            />
+          </div>
+        </button>
+        <button class="scissor card-btn" id="scissor">
+          <div class="cont">
+            <img src="./images/icon-scissor.svg" alt="" class="card-img" />
+          </div>
+        </button>
+
+        <button class="rock card-btn" id="rock">
+          <div class="cont">
+            <img src="./images/icon-rock.svg" alt="" class="card-img" />
+          </div>
+        </button>
+      </div>
+    </section>
+    <div id="winner"></div>
+    <div class="picked">
+      <div class="choice">
+        <p>you picked</p>
+        <button class="card-btn" id="uChoice-cont">
+          <div class="" id="uWin"></div>
+          <div class="cont">
+            <img src="" alt="" srcset="" id="uChoice" class="card-img" />
+          </div>
+        </button>
+      </div>
+      <div class="choice">
+        <p>computer picked</p>
+
+        <button class="card-btn" id="cChoice-cont">
+          <div class="" id="cWin"></div>
+          <div class="cont">
+            <img src="" alt="" srcset="" id="cChoice" class="card-img" />
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <button id="rule">Rules</button>
+    <div id="modal">
+      <div class="modal-cont">
+      <div class="modal-top">
+        <h1>RULES</h1>
+        <button id="modal-button">
+          <img src="./images/icon-close.svg" alt="" />
+        </button>
+      </div>
+
+      <img src="./images/image-rules.svg" alt="" srcset="" />
+    </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Yousef aldabbas</a>.
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
